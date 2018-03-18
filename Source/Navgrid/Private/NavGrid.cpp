@@ -204,7 +204,7 @@ void ANavGrid::CalculateTilesInRange(AGridPawn *Pawn, bool DoCollisionTests)
 						N->Distance = TentativeDistance;
 						N->Backpointer = Current;
 
-						if (TentativeDistance <= Pawn->MovementComponent->MovementRange)
+						if (Pawn->IsTileInRange(TentativeDistance))
 						{
 							TentativeSet.AddUnique(N);
 						}

@@ -67,6 +67,8 @@ public:
 	*/
 	virtual bool IsBusy();
 
+	virtual bool IsTileInRange(float TileDistance);
+
 	virtual bool CanMoveTo(const UNavTileComponent & Tile);
 	virtual void MoveTo(const UNavTileComponent & Tile);
 
